@@ -11,7 +11,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Chaperone Style"
+        text: "边界类型"
         bottomPadding: -10
     }
     background: Rectangle {

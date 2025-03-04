@@ -12,7 +12,7 @@ ColumnLayout {
     }
     RowLayout {
         MyText {
-            text: "Mirror Volume:"
+            text: "镜像音频:"
             Layout.preferredWidth: 260
         }
 

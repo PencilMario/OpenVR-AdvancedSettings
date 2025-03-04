@@ -29,7 +29,7 @@ GroupBox {
     label: MyText {
         id: headerText
         leftPadding: 10
-        text: "MISSING HEADER TEXT"
+        text: "标题文本丢失"
         bottomPadding: -10
     }
     background: Rectangle {

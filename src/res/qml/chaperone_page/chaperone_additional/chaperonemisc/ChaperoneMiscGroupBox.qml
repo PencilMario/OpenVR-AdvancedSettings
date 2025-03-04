@@ -10,7 +10,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Misc:"
+        text: "其他:"
         bottomPadding: -10
     }
     background: Rectangle {
@@ -34,7 +34,7 @@ GroupBox {
 
             MyToggleButton {
                 id: chaperoneFloorToggleBtn
-                text: "Floor Bounds Always On"
+                text: "地面边界始终显示"
                 Layout.preferredWidth: 375
                 onCheckedChanged: {
                     ChaperoneTabController.setChaperoneFloorToggle(this.checked, false)
@@ -44,7 +44,7 @@ GroupBox {
 
             MyToggleButton {
                 id: legacyCenterMarkerbtn
-                text: "Legacy Center Marker"
+                text: "旧版中心点"
                 Layout.preferredWidth: 375
                 onCheckedChanged: {
                     ChaperoneTabController.setCenterMarker(this.checked, false)
@@ -53,7 +53,7 @@ GroupBox {
 
             MyPushButton{
                 id:btnResetOrientation
-                text: "Reset Turn Counter"
+                text: "重置转向计数器"
                 onClicked: {
                     StatisticsTabController.statsRotationResetClicked()
                 }

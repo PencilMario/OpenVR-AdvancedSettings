@@ -15,7 +15,7 @@ GroupBox {
             Layout.fillWidth: true
             MyToggleButton{
                 id: viewRatchetToggleBtn
-                text: "View Ratchetting"
+                text: "视角棘轮调整"
                 Layout.preferredWidth: 275
                 onCheckedChanged: {
                     RotationTabController.setViewRatchettingEnabled(this.checked, true);

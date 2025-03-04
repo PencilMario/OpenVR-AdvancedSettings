@@ -11,7 +11,7 @@ GroupBox {
     label:
         MyText {
         leftPadding: 10
-        text: "Binds:"
+        text: "绑定:"
         bottomPadding: -10
         }
 
@@ -37,7 +37,7 @@ GroupBox {
 
             MyToggleButton {
                 id: steamvrBindingToggle
-                text: "Enable Per-App"
+                text: "启用逐应用设置"
                 Layout.preferredWidth: 250
                 onCheckedChanged: {
                     SteamVRTabController.setPerAppBindEnabled(this.checked, false)
@@ -78,7 +78,7 @@ GroupBox {
             MyPushButton {
                 id: bindingsButton
                 activationSoundEnabled: false
-                text: "Open Bindings"
+                text: "打开按键绑定"
                 Layout.preferredWidth: 180
                 onClicked: {
                      SteamVRTabController.launchBindingUI()
@@ -88,7 +88,7 @@ GroupBox {
         RowLayout {
             spacing: 16
             MyText {
-                text: "Save Current Binding of Selected App: "
+                text: "保存所选应用当前绑定："
                 Layout.preferredWidth: 500
                 horizontalAlignment: Text.AlignLeft
                 Layout.rightMargin: 2

@@ -6,7 +6,7 @@ import "common"
 
 
 MyStackViewPage {
-    headerText: "Space Offsets"
+    headerText: "空间偏移量"
 
     MyDialogOkPopup {
         id: offsetMessageDialog
@@ -21,7 +21,7 @@ MyStackViewPage {
         id: offsetDeleteProfileDialog
         property int profileIndex: -1
         dialogTitle: "Delete Profile"
-        dialogText: "Do you really want to delete this profile?"
+        dialogText: "您真的要删除此配置文件吗?"
         onClosed: {
             if (okClicked) {
                 MoveCenterTabController.deleteOffsetProfile(profileIndex)
@@ -40,7 +40,7 @@ MyStackViewPage {
                 Layout.leftMargin: 16
                 Layout.rightMargin: 16
                 MyText {
-                    text: "Name: "
+                    text: "名称: "
                 }
                 MyTextField {
                     id: offsetNewProfileName
@@ -76,13 +76,13 @@ MyStackViewPage {
 
         RowLayout {
             MyText {
-                text: "Tracking Universe:"
+                text: "跟踪世界:"
                 Layout.preferredWidth: 230
             }
             MyText {
                 id: spaceModeText
                 font.bold: true
-                text: "Standing"
+                text: "站立"
             }
         }
 
@@ -94,7 +94,7 @@ MyStackViewPage {
                 spacing: 18
 
                 MyText {
-                    text: "Profile:"
+                    text: "配置:"
                 }
 
                 MyComboBox {
@@ -119,7 +119,7 @@ MyStackViewPage {
                     id: offsetApplyProfileButton
                     enabled: false
                     Layout.preferredWidth: 200
-                    text: "Apply"
+                    text: "应用"
                     onClicked: {
                         if (offsetProfileComboBox.currentIndex > 0) {
                             MoveCenterTabController.applyOffsetProfile(offsetProfileComboBox.currentIndex - 1)
@@ -137,7 +137,7 @@ MyStackViewPage {
                     id: offsetDeleteProfileButton
                     enabled: false
                     Layout.preferredWidth: 200
-                    text: "Delete Profile"
+                    text: "删除配置"
                     onClicked: {
                         if (offsetProfileComboBox.currentIndex > 0) {
                             offsetDeleteProfileDialog.profileIndex = offsetProfileComboBox.currentIndex - 1
@@ -147,7 +147,7 @@ MyStackViewPage {
                 }
                 MyPushButton {
                     Layout.preferredWidth: 200
-                    text: "New Profile"
+                    text: "新配置"
                     onClicked: {
                         offsetNewProfileDialog.openPopup()
                     }
@@ -162,7 +162,7 @@ MyStackViewPage {
 
             label: MyText {
                 leftPadding: 10
-                text: "Move Space"
+                text: "移动空间"
                 bottomPadding: -10
             }
             background: Rectangle {
@@ -184,7 +184,7 @@ MyStackViewPage {
                     columns: 6
 
                     MyText {
-                        text: "X-Axis (Left/Right):"
+                        text: "X坐标轴 (左/右):"
                         Layout.preferredWidth: 340
                     }
 
@@ -232,14 +232,14 @@ MyStackViewPage {
 
                     MyToggleButton {
                         id: lockXToggle
-                        text: "Lock X"
+                        text: "锁定 X"
                         onCheckedChanged: {
                             MoveCenterTabController.lockXToggle = this.checked
                         }
                     }
 
                     MyText {
-                        text: "Y-Axis (Down/Up):"
+                        text: "Y坐标轴 (上/下):"
                         Layout.preferredWidth: 340
                     }
 
@@ -289,14 +289,14 @@ MyStackViewPage {
 
                     MyToggleButton {
                         id: lockYToggle
-                        text: "Lock Y"
+                        text: "锁定 Y"
                         onCheckedChanged: {
                             MoveCenterTabController.lockYToggle = this.checked
                         }
                     }
 
                     MyText {
-                        text: "Z-Axis (Forth/Back):"
+                        text: "Z坐标轴 (前/后):"
                         Layout.preferredWidth: 340
                     }
 
@@ -343,7 +343,7 @@ MyStackViewPage {
 
                     MyToggleButton {
                         id: lockZToggle
-                        text: "Lock Z"
+                        text: "锁定 Z"
                         onCheckedChanged: {
                             MoveCenterTabController.lockZToggle = this.checked
                         }
@@ -359,7 +359,7 @@ MyStackViewPage {
 
             label: MyText {
                 leftPadding: 10
-                text: "Rotate Space"
+                text: "空间旋转"
                 bottomPadding: -10
             }
             background: Rectangle {
@@ -464,7 +464,7 @@ MyStackViewPage {
                 MyPushButton {
                     id: spaceResetButton
                     Layout.preferredWidth: 250
-                    text: "Reset"
+                    text: "重置"
                     onClicked: {
                         MoveCenterTabController.reset()
                     }
@@ -478,7 +478,7 @@ MyStackViewPage {
                     id: spaceLogMatrices
                     Layout.preferredWidth: 250
                     visible: MoveCenterTabController.showLogMatricesButton
-                    text: "Log Matrices"
+                    text: "日志矩阵"
                     onClicked: {
                         MoveCenterTabController.outputLogPoses()
                     }
@@ -488,7 +488,7 @@ MyStackViewPage {
                     id: spaceSeatedRecenter
                     Layout.preferredWidth: 250
                     visible: true
-                    text: "Re-center"
+                    text: "坐回到中心位置"
                     onClicked: {
                         MoveCenterTabController.sendSeatedRecenter()
                     }

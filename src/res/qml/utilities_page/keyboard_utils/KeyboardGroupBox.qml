@@ -10,7 +10,7 @@ GroupBox {
     
     label: MyText {
         leftPadding: 10
-        text: "Keyboard Utilities"
+        text: "键盘实用工具"
         bottomPadding: -10
     }
     background: Rectangle {
@@ -30,7 +30,7 @@ GroupBox {
         
         
         MyText {
-            text: "Send to active application: "
+            text: "发送到当前应用: "
         }
         
         RowLayout {
@@ -38,7 +38,7 @@ GroupBox {
             Layout.fillWidth: true
             
             MyPushButton {
-                text: "Keyboard Input"
+                text: "键盘输入"
                 Layout.fillWidth: true
                 onClicked: {
                     OverlayController.showKeyboard("", 601)

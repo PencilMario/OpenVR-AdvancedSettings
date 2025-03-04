@@ -7,7 +7,7 @@ import "." // QTBUG-34418, singletons require explicit import to load qmldir fil
 import "common"
 
 MyStackViewPage {
-    headerText: "Chaperone Proximity Warning Settings"
+    headerText: "边界接近警告设置"
 
     ColorDialog {
         id: colorDialog
@@ -29,14 +29,14 @@ MyStackViewPage {
             spacing: 0
             MyToggleButton {
                 id: switchBeginnerToggle
-                text: "Switch to Beginner Mode"
+                text: "切换到初学者模式"
                 onCheckedChanged: {
                     ChaperoneTabController.chaperoneSwitchToBeginnerEnabled = checked
                 }
             }
             RowLayout {
                 MyText {
-                    text: "Activation Distance: "
+                    text: "激活的距离: "
                     Layout.preferredWidth: 250
                 }
                 MyPushButton2 {
@@ -114,14 +114,14 @@ MyStackViewPage {
             spacing: 0
             MyToggleButton {
                 id: hapticFeedbackToggle
-                text: "Trigger Haptic Feedback"
+                text: "触发触觉反馈"
                 onCheckedChanged: {
                     ChaperoneTabController.chaperoneHapticFeedbackEnabled = checked
                 }
             }
             RowLayout {
                 MyText {
-                    text: "Activation Distance: "
+                    text: "激活的距离: "
                     Layout.preferredWidth: 250
                 }
                 MyPushButton2 {
@@ -201,14 +201,14 @@ MyStackViewPage {
                 spacing: 32
                 MyToggleButton {
                     id: audioWarningToggle
-                    text: "Audio Warning"
+                    text: "音频警告"
                     onCheckedChanged: {
                         ChaperoneTabController.chaperoneAlarmSoundEnabled = checked
                     }
                 }
                 MyToggleButton {
                     id: audioWarningLoopingToggle
-                    text: "Loop Audio"
+                    text: "循环音频"
                     onCheckedChanged: {
                         ChaperoneTabController.chaperoneAlarmSoundLooping = checked
                         audioWarningAdjustVolumeToggle.enabled = checked
@@ -216,7 +216,7 @@ MyStackViewPage {
                 }
                 MyToggleButton {
                     id: audioWarningAdjustVolumeToggle
-                    text: "Adjust Volume"
+                    text: "调整音量"
                     enabled: false
                     onCheckedChanged: {
                         ChaperoneTabController.chaperoneAlarmSoundAdjustVolume = checked
@@ -225,7 +225,7 @@ MyStackViewPage {
             }
             RowLayout {
                 MyText {
-                    text: "Activation Distance: "
+                    text: "激活的距离: "
                     Layout.preferredWidth: 250
                 }
                 MyPushButton2 {
@@ -303,14 +303,14 @@ MyStackViewPage {
             spacing: 0
             MyToggleButton {
                 id: openDashboardToggle
-                text: "Open Dashboard"
+                text: "打开仪表板"
                 onCheckedChanged: {
                     ChaperoneTabController.chaperoneShowDashboardEnabled = checked
                 }
             }
             RowLayout {
                 MyText {
-                    text: "Activation Distance: "
+                    text: "激活的距离: "
                     Layout.preferredWidth: 250
                 }
                 MyPushButton2 {

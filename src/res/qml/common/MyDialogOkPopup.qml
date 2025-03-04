@@ -72,7 +72,7 @@ Popup {
                     }
                     MyPushButton {
                         implicitWidth: 200
-                        text: "Ok"
+                        text: "确定"
                         onClicked: {
                             okClicked = true
                             myDialogPopup.close()

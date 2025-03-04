@@ -10,7 +10,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Gravity Settings"
+        text: "重力设置"
         bottomPadding: -10
     }
     background: Rectangle {
@@ -34,7 +34,7 @@ GroupBox {
 
             MyToggleButton {
                 id: gravityToggleButton
-                text: "On"
+                text: "开"
                 onCheckedChanged: {
                     MoveCenterTabController.gravityActive = this.checked
                 }
@@ -45,7 +45,7 @@ GroupBox {
             }
 
             MyText {
-                text: "Gravity Strength (+ is down):"
+                text: "重力强度（+方向为下）:"
                 horizontalAlignment: Text.AlignRight
                 Layout.rightMargin: 2
             }
@@ -107,7 +107,7 @@ GroupBox {
 
             MyToggleButton {
                 id: momentumToggleButton
-                text: "Save Momentum"
+                text: "保存动量"
                 onCheckedChanged: {
                     MoveCenterTabController.momentumSave = this.checked
                 }
@@ -118,7 +118,7 @@ GroupBox {
             }
 
             MyText {
-                text: "Friction:"
+                text: "摩擦力:"
                 horizontalAlignment: Text.AlignRight
                 Layout.rightMargin: 2
             }
@@ -155,7 +155,7 @@ GroupBox {
             }
 
             MyText {
-                text: "Fling Strength:"
+                text: "投掷强度:"
                 horizontalAlignment: Text.AlignRight
                 Layout.rightMargin: 2
             }

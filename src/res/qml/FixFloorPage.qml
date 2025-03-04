@@ -6,7 +6,7 @@ import "common"
 
 
 MyStackViewPage {
-    headerText: "Space Fix"
+    headerText: "空间修复"
 
     content: ColumnLayout {
         spacing: 18
@@ -17,7 +17,7 @@ MyStackViewPage {
         }
 
         MyText {
-            text: "Place one controller on the ground and ensure good visibility to the base stations."
+            text: "将一个控制器放置在地面上，保证基站的能见度."
             wrapMode: Text.WordWrap
             font.pointSize: 28
             horizontalAlignment: Text.AlignHCenter
@@ -26,7 +26,7 @@ MyStackViewPage {
         }
 
         MyText {
-            text: "(Disabled in 'Seated' Universe Type)"
+            text: "(在“坐姿”宇宙类型中禁用)"
             id: seatedWarningText
             visible: false
             wrapMode: Text.WordWrap
@@ -44,7 +44,7 @@ MyStackViewPage {
         MyText {
             id: statusMessageText
             enabled: false
-            text: "Status Text"
+            text: "状态文本"
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             Layout.fillWidth: true
@@ -58,7 +58,7 @@ MyStackViewPage {
         MyPushButton {
             id: fixButton
             Layout.fillWidth: true
-            text: "Fix Floor"
+            text: "地面修复"
             Layout.preferredHeight: 80
             onClicked: {
                 FixFloorTabController.fixFloorClicked()
@@ -68,7 +68,7 @@ MyStackViewPage {
 		MyPushButton {
             id: recenterButton
             Layout.fillWidth: true
-            text: "Recenter Space"
+            text: "重新定位空间"
             Layout.preferredHeight: 80
             onClicked: {
                 FixFloorTabController.recenterClicked()
@@ -81,7 +81,7 @@ MyStackViewPage {
             // TODO re-enable undo and remove visible: false
             visible: false
             Layout.fillWidth: true
-            text: "Undo Fix"
+            text: "撤销修复"
             onClicked: {
                 FixFloorTabController.undoFixFloorClicked()
             }
@@ -90,10 +90,10 @@ MyStackViewPage {
         MyPushButton {
             id: zeroSpaceButton
             Layout.fillWidth: true
-            text: "Apply Space Settings Offsets as Center"
+            text: "应用空间设置偏移为居中"
             Layout.preferredHeight: 80
             onClicked: {
-                MoveCenterTabController.addCurOffsetAsCenter()
+                MoveCenterTabController.zeroOffsets()
             }
         }
 
@@ -104,7 +104,7 @@ MyStackViewPage {
         MyPushButton {
             id: revertButton
             Layout.fillWidth: true
-            text: "Revert All Changes from This Session"
+            text: "恢复此会话的所有更改"
             Layout.preferredHeight: 80
             onClicked: {
                 ChaperoneTabController.applyAutosavedProfile()

@@ -69,7 +69,7 @@ Popup {
                     Layout.bottomMargin: 12
                     MyPushButton {
                         implicitWidth: 200
-                        text: "Ok"
+                        text: "确定"
                         onClicked: {
                             okClicked = true
                             myDialogPopup.close()
@@ -80,7 +80,7 @@ Popup {
                     }
                     MyPushButton {
                         implicitWidth: 200
-                        text: "Cancel"
+                        text: "取消"
                         onClicked: {
                             okClicked = false
                             myDialogPopup.close()

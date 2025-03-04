@@ -10,7 +10,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Misc:"
+        text: "其他:"
         bottomPadding: -10
     }
     background: Rectangle {
@@ -34,7 +34,7 @@ GroupBox {
 
             MyToggleButton {
                 id: steamvrPerformanceGraphToggle
-                text: "Enable Timing Overlay"
+                text: "启用时序覆盖层"
                 Layout.preferredWidth: 300
                 onCheckedChanged: {
                     SteamVRTabController.setPerformanceGraph(this.checked, false)
@@ -46,7 +46,7 @@ GroupBox {
             }
             MyToggleButton {
                 id: steamvrNoHMDToggle
-                text: "Require HMD"
+                text: "需要 HMD"
                 Layout.preferredWidth: 300
                 onCheckedChanged: {
                     SteamVRTabController.setNoHMD(this.checked, false)
@@ -59,7 +59,7 @@ GroupBox {
             MyToggleButton {
                 id: steamvrNoFadeToGridToggle
                 Layout.fillWidth: true
-                text: "No Fade to Grid"
+                text: "不淡出到网格"
                 onCheckedChanged: {
                     SteamVRTabController.setNoFadeToGrid(this.checked, false)
                 }
@@ -71,7 +71,7 @@ GroupBox {
             MyToggleButton {
                 id: steamvrMultipleDriverToggle
                 Layout.preferredWidth: 300
-                text: "Allow Multiple Drivers"
+                text: "允许多个驱动程序"
                 onCheckedChanged: {
                     SteamVRTabController.setMultipleDriver(this.checked, false)
                 }
@@ -83,7 +83,7 @@ GroupBox {
             MyToggleButton {
                 id: steamvrSystemButtonToggle
                 Layout.fillWidth: true
-                text: "Enable System Button Binding"
+                text: "启用系统按钮绑定"
                 onCheckedChanged: {
                     SteamVRTabController.setSystemButton(this.checked, false)
                 }
@@ -96,7 +96,7 @@ GroupBox {
 
             MyToggleButton {
                 id: steamvrNotificationToggle
-                text: "Disable Notifications"
+                text: "禁用通知"
                  Layout.preferredWidth: 300
                 onCheckedChanged: {
                     SteamVRTabController.setDND(this.checked, false)

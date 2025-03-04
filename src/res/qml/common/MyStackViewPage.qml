@@ -12,7 +12,7 @@ Rectangle {
 
     property StackView stackView
 
-    property string headerText: "Header Title"
+    property string headerText: "标题"
 
     property bool headerShowBackButton: true
 
@@ -67,7 +67,7 @@ Rectangle {
 
     property Item content: Frame {
         MyText {
-            text: "Content"
+            text: "目录"
         }
     }
 

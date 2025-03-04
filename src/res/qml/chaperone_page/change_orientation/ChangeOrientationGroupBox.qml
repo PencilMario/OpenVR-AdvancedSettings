@@ -11,7 +11,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Rotate Orientation (permanent)"
+        text: "旋转方向（永久生效）"
         bottomPadding: -10
     }
     background: Rectangle {

@@ -6,7 +6,7 @@ import "common"
 
 
 MyStackViewPage {
-    headerText: "Statistics"
+    headerText: "统计"
 
     content: ColumnLayout {
         spacing: 18
@@ -15,7 +15,7 @@ MyStackViewPage {
             columns: 3
 
             MyText {
-                text: "HMD Distance Moved:"
+                text: "HMD移动:"
             }
 
             MyText {
@@ -27,14 +27,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.statsDistanceResetClicked()
                 }
             }
 
             MyText {
-                text: "HMD Rotations:"
+                text: "HMD旋转:"
             }
 
             MyText {
@@ -46,14 +46,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.statsRotationResetClicked()
                 }
             }
 
             MyText {
-                text: "Left Controller Max Speed:"
+                text: "左控制器最大速度:"
             }
 
             MyText {
@@ -65,14 +65,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.statsLeftControllerSpeedResetClicked()
                 }
             }
 
             MyText {
-                text: "Right Controller Max Speed:"
+                text: "右控制器最大速度:"
             }
 
             MyText {
@@ -84,7 +84,7 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.statsRightControllerSpeedResetClicked()
                 }
@@ -96,7 +96,7 @@ MyStackViewPage {
             Layout.topMargin: 32
 
             MyText {
-                text: "Presented Frames:"
+                text: "已呈现帧:"
             }
 
             MyText {
@@ -108,14 +108,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.presentedFramesResetClicked()
                 }
             }
 
             MyText {
-                text: "Dropped Frames:"
+                text: "丢帧:"
             }
 
             MyText {
@@ -127,14 +127,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.droppedFramesResetClicked()
                 }
             }
 
             MyText {
-                text: "Reprojected Frames:"
+                text: "重投影的帧:"
             }
 
             MyText {
@@ -146,14 +146,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.reprojectedFramesResetClicked()
                 }
             }
 
             MyText {
-                text: "Timed Out:"
+                text: "超时:"
             }
 
             MyText {
@@ -165,14 +165,14 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.timedOutResetClicked()
                 }
             }
 
             MyText {
-                text: "Reprojection Ratio:"
+                text: "再投影率:"
             }
 
             MyText {
@@ -184,7 +184,7 @@ MyStackViewPage {
             }
 
             MyPushButton {
-                text: "Reset"
+                text: "重置"
                 onClicked: {
                     StatisticsTabController.totalRatioResetClicked()
                 }

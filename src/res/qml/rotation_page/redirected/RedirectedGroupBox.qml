@@ -10,7 +10,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "Vestibular Motion (for continuous redirected walking)"
+        text: "前庭系统运动补偿（用于连续重定向行走）"
         bottomPadding: -12
     }
     background: Rectangle {
@@ -32,7 +32,7 @@ GroupBox {
       RowLayout{
             MyToggleButton {
                 id: redirectedModeToggle
-                text: "Toggle On/Off"
+                text: "切换 开/关"
                 Layout.preferredWidth: 225
                 onCheckedChanged: {
                     RotationTabController.setVestibularMotionEnabled(this.checked, true);
@@ -78,7 +78,7 @@ GroupBox {
            }
 
             MyText{
-                text: "Radius: "
+                text: "半径: "
                 horizontalAlignment: Text.AlignRight
                 Layout.rightMargin: 4
             }

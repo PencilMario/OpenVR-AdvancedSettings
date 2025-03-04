@@ -15,7 +15,7 @@ GroupBox {
             Layout.fillWidth: true
 
             MyText {
-                text: "Snap Turn Angle:"
+                text: "瞬转角度:"
                 horizontalAlignment: Text.AlignRight
                 Layout.rightMargin: 2
             }
@@ -69,7 +69,7 @@ GroupBox {
            }
 
            MyText {
-               text: "Smooth Turn Rate:"
+               text: "平滑转向速率:"
                horizontalAlignment: Text.AlignRight
                Layout.rightMargin: 2
            }
