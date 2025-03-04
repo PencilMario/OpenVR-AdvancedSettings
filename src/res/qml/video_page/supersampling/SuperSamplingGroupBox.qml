@@ -10,7 +10,7 @@ GroupBox {
 
     label: MyText {
         leftPadding: 10
-        text: "超级采样:(可能需要刷新仪表板或重新启动SteamVR)"
+        text: "超采样：（可能需要刷新仪表板或重启SteamVR）"
         bottomPadding: -10
     }
     background: Rectangle {
